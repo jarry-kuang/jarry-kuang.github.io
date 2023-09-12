@@ -30,7 +30,10 @@
     <div class="g-logo">
       <a href="/"></a>
     </div>
-    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
+    <svg id="menu-toggle" class="icon-menu" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
     <nav class="g-nav">
         <ul>
             
@@ -45,15 +48,92 @@
 </header>
 
 
-<div class="blog-g-banner blog-home-banner banner-theme-default" 
+<div class="g-banner home-banner banner-theme-default" 
  data-theme="default" 
- style=" "
+ style=" 
+        height:7%"
  >
     <h2>Blog</h2>
 </div>
 
 <main class="g-container home-content">
     <div class="article-list">
+        
+            <article class="article-item">
+                
+                <section class="post-preview">
+                    <a class="post-link" href="/linux-system.html" title="Hello Linux"></a>
+                    <h2 class="post-title">Hello Linux</h2>
+                    
+                    
+                    <p class="post-excerpt">修改了点啥</p>
+                    
+                </section>
+                <footer class="post-meta">
+                    <div class="post-tags">
+                        
+                            
+                            <a href=/tags.html#Linux%20ubuntu class="post-tag">Linux ubuntu</a>
+                            
+                        
+                    </div>
+                    <time class="post-date" datetime="23-09-11">11 Sep 2023</time>
+                </footer>
+            </article>
+        
+            <article class="article-item">
+                
+                <div class="post-cover">
+                    <a class="post-link" href="/hello-jekyll.html" title="Hello Jekyll"></a>
+                    <img src="/blog/post_cover/2023-09-11-hello-jekyll.JPG" href="/hello-jekyll.html" alt="">
+                </div>
+                
+                <section class="post-preview">
+                    <a class="post-link" href="/hello-jekyll.html" title="Hello Jekyll"></a>
+                    <h2 class="post-title">Hello Jekyll</h2>
+                    
+                    
+                    <p class="post-excerpt">H20-AC (1.0.2)</p>
+                    
+                </section>
+                <footer class="post-meta">
+                    <div class="post-tags">
+                        
+                            
+                            <a href=/tags.html#Jekyll class="post-tag">Jekyll</a>
+                            
+                        
+                    </div>
+                    <time class="post-date" datetime="23-09-11">11 Sep 2023</time>
+                </footer>
+            </article>
+        
+            <article class="article-item">
+                
+                <div class="post-cover">
+                    <a class="post-link" href="/hello-blog.html" title="Hello Blog"></a>
+                    <img src="/blog/post_cover/2023-09-11-hello-blog.jpg" href="/hello-blog.html" alt="">
+                </div>
+                
+                <section class="post-preview">
+                    <a class="post-link" href="/hello-blog.html" title="Hello Blog"></a>
+                    <h2 class="post-title">Hello Blog</h2>
+                    
+                    
+                    <p class="post-excerpt">Hello</p>
+                    
+                </section>
+                <footer class="post-meta">
+                    <div class="post-tags">
+                        
+                            
+                            <a href=/tags.html#Life class="post-tag">Life</a>
+                            
+                        
+                    </div>
+                    <time class="post-date" datetime="23-09-11">11 Sep 2023</time>
+                </footer>
+            </article>
         
 
         
@@ -74,6 +154,19 @@
             </section>
 
             
+            <section class="tags-card">
+                
+                    
+                    <a href="/tags.html#Life" class="tag">Life</a>
+                
+                    
+                    <a href="/tags.html#Jekyll" class="tag">Jekyll</a>
+                
+                    
+                    <a href="/tags.html#Linux%20ubuntu" class="tag">Linux ubuntu</a>
+                
+            </section>
+            
         </div>
 
         
@@ -88,7 +181,11 @@
 
 </main>
 
-<footer class="g-footer">
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/index.js"></script>
+    <footer class="g-footer">
   <section>J.K ©
   
   
@@ -99,12 +196,6 @@
   </section>
   <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="/404.html">Gogogo</a></section>
 </footer>
-
-
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/assets/js/prism.js"></script>
-    <script src="/assets/js/index.js"></script>
-    <footer class="g-footer">
 
   </body>
 </html>

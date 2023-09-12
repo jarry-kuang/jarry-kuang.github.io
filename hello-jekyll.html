@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Jekyll - JK web</title>
+    <meta name="author"  content="Jarry Kuang">
+    <meta name="description" content="Hello Jekyll">
+    <meta name="keywords"  content="Jekyll">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hello Jekyll - JK web">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/hello-jekyll.html">
+    <meta property="og:description" content="For life, For live">
+    <meta property="og:site_name" content="JK web">
+    <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_roc50gemkxpw4s4i.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/share.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	
+    <!--
+Author: Ray-Eldath
+-->
+<style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+    
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+            
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+            
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+            
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+</head>
+
+
+<body>
+  <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+  <input id="nm-switch" type="hidden" value="false"> <header class="g-header">
+    <div class="g-logo">
+      <a href="/"></a>
+    </div>
+    <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
+    <svg id="menu-toggle" class="icon-menu" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
+    <nav class="g-nav">
+        <ul>
+            
+            <li><a href="/">home</a></li>
+            
+            <li><a href="/blog/">blog</a></li>
+            
+            <li><a href="/tags/">tags</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+  <header
+    class="g-banner post-header post-pattern-circuitBoard bgcolor-default "
+    data-theme="default"
+  >
+    <div class="post-wrapper">
+      <div class="post-tags">
+        
+          
+            <a href="/pages/default/tags.html#Jekyll" class="post-tag">Jekyll</a>
+          
+        
+      </div>
+      <h1>Hello Jekyll</h1>
+      <div class="post-meta">
+        <span class="post-meta-item"><i class="iconfont icon-author"></i>J.K</span>
+        <time class="post-meta-item" datetime="23-09-11"><i class="iconfont icon-date"></i>11 Sep 2023</time>
+      </div>
+    </div>
+    
+    <div class="filter"></div>
+      <div class="post-cover" style="background: url('/blog/post_cover/2023-09-11-hello-jekyll.JPG') center no-repeat; background-size: cover;"></div>
+    
+  </header>
+
+  <div class="post-content visible">
+    
+
+    <article class="markdown-body">
+      <h2 id="h20-ac-102">H20-AC (1.0.2)</h2>
+
+<p>Download Source Code: <a href="https://github.com/zhonger/jekyll-theme-H2O-ac">Jekyll-H2O-AC</a></p>
+
+<p>技术栈：</p>
+<ol>
+  <li>引入jQuery类库，使用Sass编写样式，使用Gulp来编译Sass、合并压缩css、js，开源在<a href="https://github.com/kaeyleo/jekyll-theme-H2O">Github</a>上。但是我的版本抛弃了用gulp来编译sass,更贴合jekyll上面的教程（其实是自己看不懂所以决定见按照教程的来）</li>
+  <li>现在是支持两个主题配色，估计如果未来有戏的话多加几个配色，搞点花里胡哨的</li>
+  <li>现在有个侧边栏，我总是不太喜欢这个设计，但是如果去掉的话搜索栏也得去掉，先这样吧，以后想个办法直接在navbar下面放搜索栏，这样搜起来也会方便点</li>
+  <li>Cover 这个参数是用来配置文章封面图的，就会弄【主题色+底纹】这样，感受一下应该就是gogogo（在footer那个连接）里面的样子吧</li>
+  <li>
+    <p>代码高亮是用<a href="http://prismjs.com">Prism.js</a>的，见到不要删除了，用’&lt;pre&gt;‘元素和’<code>' 元素来标记代码：</code></p>
+
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"language-css"</span><span class="nt">&gt;</span>p { color: red }<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div>    </div>
+    <p>在Markdown中你可以这样写：</p>
+
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="p">```</span><span class="nl">css
+</span> <span class="nt">p</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">red</span> <span class="p">}</span>
+ <span class="p">```</span>
+</code></pre></div>    </div>
+
+    <p>支持语言：</p>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Sass</li>
+      <li>JavaScript</li>
+      <li>CoffeeScript</li>
+      <li>Java</li>
+      <li>C-like</li>
+      <li>Swift</li>
+      <li>PHP</li>
+      <li>Go</li>
+      <li>Python</li>
+    </ul>
+  </li>
+  <li>
+    <p>第三方评论，由于多说关闭，又对国内其他第三方评论插件无感，所以将<a href="https://disqus.com/">Disqus</a>列为首选（目前模板也只提供了这个）（啊原来是干这个的啊，我删掉了），请自备梯子。</p>
+  </li>
+  <li>响应式设计，修改了点参数，看起来顺眼点了</li>
+</ol>
+
+<h2 id="todo">TODO</h2>
+
+<p>最后想要说一下要增加和修改的地方吧。想添加一个专为记录生活照片的一个页面，技术栈还没想好，实现瀑布流的效果，然后因为源文件或许有点大，弄一下缩略图的设计，这样页面加载起来也快一点。</p>
+
+
+    </article>
+
+    
+  </div>
+
+  <section class="author-detail">
+    <section class="post-footer-item author-card">
+      <div class="avatar">
+        <img src="/assets/img/icon.jpeg" alt="">
+      </div>
+      <div class="author-name" rel="author">Jarry Kuang</div>
+      <div class="bio">
+        <p>ROBOTICS MECHATRONIC HARWARD FRONTEND</p>
+      </div>
+      
+    </section>
+    <section class="post-footer-item read-next">
+      
+      <div class="read-next-item">
+        <a href="/hello-blog.html" class="read-next-link"></a>
+          <section>
+            <span> Read Previous</span>
+            <h1 style="color: rgb(170, 106, 230);">Hello Blog</h1>
+            <p>Hello</p>
+          </section>
+          
+          <div class="filter"></div>
+          <img src="/blog/post_cover/2023-09-11-hello-blog.jpg" alt="">
+          
+      </div>
+      
+
+      
+      <div class="read-next-item">
+        <a href="/linux-system.html" class="read-next-link"></a>
+        <section>
+          <span> Read Next</span>
+          <h1 style="color: aqua;">Hello Linux</h1>
+          <p>修改了点啥</p>
+        </section>
+        
+        </div>
+        
+    </section>
+    
+  </section>
+
+  <footer class="g-footer">
+  <section>J.K ©
+  
+  
+    2022
+    -
+  
+  2023
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="/404.html">Gogogo</a></section>
+</footer>
+
+
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
+    socialShare('.social-share', {
+      sites: [
+        
+          'wechat'
+          ,
+          
+        
+          'weibo'
+          ,
+          
+        
+          'douban'
+          ,
+          
+        
+          'twitter'
+          
+        
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+    });
+  </script>
+
+  
+
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/index.js"></script>
+</body>
+
+</html>

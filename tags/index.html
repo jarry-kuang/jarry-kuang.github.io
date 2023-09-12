@@ -30,7 +30,10 @@
     <div class="g-logo">
       <a href="/"></a>
     </div>
-    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
+    <svg id="menu-toggle" class="icon-menu" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
     <nav class="g-nav">
         <ul>
             
@@ -54,24 +57,41 @@
     <ul class="tags-list">
         <li>
         
+            
+            <a href="#Life" class="tag">Life</a>
+            
+            <a href="#Jekyll" class="tag">Jekyll</a>
+            
+            <a href="#Linux ubuntu" class="tag">Linux ubuntu</a>
+            
+        
         </li>
         
+        
+        <li>
+            <span class="tag-name" id="Life">「Life」</span>
+            
+            <a class="tag-post" href="/hello-blog.html" title="Hello Blog">Hello Blog</a>
+            
+        </li>
+        
+        <li>
+            <span class="tag-name" id="Jekyll">「Jekyll」</span>
+            
+            <a class="tag-post" href="/hello-jekyll.html" title="Hello Jekyll">Hello Jekyll</a>
+            
+        </li>
+        
+        <li>
+            <span class="tag-name" id="Linux ubuntu">「Linux ubuntu」</span>
+            
+            <a class="tag-post" href="/linux-system.html" title="Hello Linux">Hello Linux</a>
+            
+        </li>
         
     </ul>
 </main>
     
-<footer class="g-footer">
-  <section>J.K ©
-  
-  
-    2022
-    -
-  
-  2023
-  </section>
-  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="/404.html">Gogogo</a></section>
-</footer>
-
 
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="/assets/js/prism.js"></script>

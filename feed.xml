@@ -1,1 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-09-09T15:41:10+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">JK web</title><subtitle>For life, For live</subtitle><author><name>Jarry Kuang</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-09-12T17:38:33+10:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">JK web</title><subtitle>For life, For live</subtitle><author><name>Jarry Kuang</name></author><entry><title type="html">Hello Blog</title><link href="http://localhost:4000/hello-blog.html" rel="alternate" type="text/html" title="Hello Blog" /><published>2023-09-11T00:00:00+10:00</published><updated>2023-09-11T00:00:00+10:00</updated><id>http://localhost:4000/hello-blog</id><content type="html" xml:base="http://localhost:4000/hello-blog.html"><![CDATA[<h2 id="hello">Hello</h2>
+
+<p>欢迎来到我的博客，这个博客就是想记录一下我折腾了些啥，这个Jekyll的主题我是基于<a href="https://github.com/zhonger/jekyll-theme-H2O-ac">H2O-ac</a>的主题来修改的，具体的修改过程也会在以后的博客中去介绍一下。当然了，我也没有这么厉害的技术来修改核心的文件，也就是该该外观啥的，反正慢慢来嘛。</p>
+
+<p>我呢，就是什么都喜欢折腾一下，什么都想玩一下，单片机，树莓派，Verilog, ROS… 反正有些是我专业学的东西有些就是自己兴趣的东西，都不怎么厉害哈哈哈哈。这个网站就算记录一下我的折腾过程和出现的问题吧！解决不了的就暂时搁置，等有兴趣解决的时候再弄吧～</p>
+
+<h2 id="究竟修改了点啥">究竟修改了点啥</h2>
+<p>也没啥，就是修改了文件结构，现在更符合jekyll的tutorial教的教程了，也更容易看懂了
+要开源吗？算了，自己都看得寒酸，等玩的更6了再开源这个主题吧</p>]]></content><author><name>J.K</name></author><category term="Life" /><summary type="html"><![CDATA[Hello]]></summary></entry><entry><title type="html">Hello Jekyll</title><link href="http://localhost:4000/hello-jekyll.html" rel="alternate" type="text/html" title="Hello Jekyll" /><published>2023-09-11T00:00:00+10:00</published><updated>2023-09-11T00:00:00+10:00</updated><id>http://localhost:4000/hello-jekyll</id><content type="html" xml:base="http://localhost:4000/hello-jekyll.html"><![CDATA[<h2 id="h20-ac-102">H20-AC (1.0.2)</h2>
+
+<p>Download Source Code: <a href="https://github.com/zhonger/jekyll-theme-H2O-ac">Jekyll-H2O-AC</a></p>
+
+<p>技术栈：</p>
+<ol>
+  <li>引入jQuery类库，使用Sass编写样式，使用Gulp来编译Sass、合并压缩css、js，开源在<a href="https://github.com/kaeyleo/jekyll-theme-H2O">Github</a>上。但是我的版本抛弃了用gulp来编译sass,更贴合jekyll上面的教程（其实是自己看不懂所以决定见按照教程的来）</li>
+  <li>现在是支持两个主题配色，估计如果未来有戏的话多加几个配色，搞点花里胡哨的</li>
+  <li>现在有个侧边栏，我总是不太喜欢这个设计，但是如果去掉的话搜索栏也得去掉，先这样吧，以后想个办法直接在navbar下面放搜索栏，这样搜起来也会方便点</li>
+  <li>Cover 这个参数是用来配置文章封面图的，就会弄【主题色+底纹】这样，感受一下应该就是gogogo（在footer那个连接）里面的样子吧</li>
+  <li>
+    <p>代码高亮是用<a href="http://prismjs.com">Prism.js</a>的，见到不要删除了，用’&lt;pre&gt;‘元素和’<code>' 元素来标记代码：</code></p>
+
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;pre&gt;&lt;code</span> <span class="na">class=</span><span class="s">"language-css"</span><span class="nt">&gt;</span>p { color: red }<span class="nt">&lt;/code&gt;&lt;/pre&gt;</span>
+</code></pre></div>    </div>
+    <p>在Markdown中你可以这样写：</p>
+
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="p">```</span><span class="nl">css
+</span> <span class="nt">p</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="no">red</span> <span class="p">}</span>
+ <span class="p">```</span>
+</code></pre></div>    </div>
+
+    <p>支持语言：</p>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Sass</li>
+      <li>JavaScript</li>
+      <li>CoffeeScript</li>
+      <li>Java</li>
+      <li>C-like</li>
+      <li>Swift</li>
+      <li>PHP</li>
+      <li>Go</li>
+      <li>Python</li>
+    </ul>
+  </li>
+  <li>
+    <p>第三方评论，由于多说关闭，又对国内其他第三方评论插件无感，所以将<a href="https://disqus.com/">Disqus</a>列为首选（目前模板也只提供了这个）（啊原来是干这个的啊，我删掉了），请自备梯子。</p>
+  </li>
+  <li>响应式设计，修改了点参数，看起来顺眼点了</li>
+</ol>
+
+<h2 id="todo">TODO</h2>
+
+<p>最后想要说一下要增加和修改的地方吧。想添加一个专为记录生活照片的一个页面，技术栈还没想好，实现瀑布流的效果，然后因为源文件或许有点大，弄一下缩略图的设计，这样页面加载起来也快一点。</p>]]></content><author><name>J.K</name></author><category term="Jekyll" /><summary type="html"><![CDATA[H20-AC (1.0.2)]]></summary></entry><entry><title type="html">Hello Linux</title><link href="http://localhost:4000/linux-system.html" rel="alternate" type="text/html" title="Hello Linux" /><published>2023-09-11T00:00:00+10:00</published><updated>2023-09-11T00:00:00+10:00</updated><id>http://localhost:4000/linux-system</id><content type="html" xml:base="http://localhost:4000/linux-system.html"><![CDATA[<h2 id="修改了点啥">修改了点啥</h2>
+
+<h3 id="输入法">输入法</h3>
+<p>Linux22.04自带的中文输入法太难用了，打字的时候还会有点卡卡的，这是我受不了的，查了一下网上，好像搜狗的输入法挺好用，所以就弄了。确实好用。下面是这次修改的方法和踩坑的地方。</p>
+<ul>
+  <li>其实跟着<a href="https://shurufa.sogou.com/linux/guide">教程</a>来弄，基本没什么问题。有一个注意的地方就是一定要把原来自带的ibus清干净不然会导致黑屏.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get remove ibus<span class="ge">* //这里的*</span>会保证彻底卸载
+sudo apt-get purge ibus<span class="err">*</span>
+sudo apt-get autoremove
+reboot
+</code></pre></div>    </div>
+    <h4 id="很不幸黑屏怎么办呢">很不幸黑屏怎么办呢~</h4>
+    <p>CTRL+ALT+&lt;F1~F6&gt;进入终端 然后再用上面代码来清干净就好了</p>
+  </li>
+</ul>
+
+<h2 id="加入了jekyll来运营个人博客">加入了jekyll来运营个人博客</h2>]]></content><author><name>J.K</name></author><category term="Linux ubuntu" /><summary type="html"><![CDATA[修改了点啥]]></summary></entry></feed>

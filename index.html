@@ -30,7 +30,10 @@
     <div class="g-logo">
       <a href="/"></a>
     </div>
-    <i id="menu-toggle" class="iconfont icon-menu"></i>
+    <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
+    <svg id="menu-toggle" class="icon-menu" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
     <nav class="g-nav">
         <ul>
             
@@ -44,20 +47,18 @@
     </nav>
 </header>
 
-<div class="g-banner home-banner banner-theme-default" 
- data-theme="default" 
- style=""
->
-        <h2>Hello Friend</h2>
-<h3>Welcome,Welcome</h3>
+<div class="g-banner home-banner banner-theme-default" data-theme="default" style="
+            background: url(/assets/img/cover.png) no-repeat;
+            background-size:cover;
+             ">
+    <h2>Hello Friend</h2>
+    <h3>Welcome,Welcome</h3>
 
-<h4><a href="/blog/" class="btn">Here, to blog</a></h4>
-<h4><a href="/blog/" class="btn">Here, to photo</a></h4>
-<h4><a href="/blog/" class="btn">Here, to know about me</a></h4>
+    <h4><a href="/blog/" class="btn">Here, to blog</a></h4>
+    <h4><a href="/blog/" class="btn">Here, to photo</a></h4>
+    <h4><a href="/blog/" class="btn">Here, to know about me</a></h4>
 
 </div>
-
-
 
 
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Linux - JK web</title>
+    <meta name="author"  content="Jarry Kuang">
+    <meta name="description" content="Hello Linux">
+    <meta name="keywords"  content="Linux ubuntu">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hello Linux - JK web">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000/linux-system.html">
+    <meta property="og:description" content="For life, For live">
+    <meta property="og:site_name" content="JK web">
+    <link rel="stylesheet" href="//cdn.staticfile.org/normalize/6.0.0/normalize.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_roc50gemkxpw4s4i.css">
+    <link rel="stylesheet" href="/assets/css/github-markdown.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
+    <link rel="stylesheet" href="/assets/css/share.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+	
+    <!--
+Author: Ray-Eldath
+-->
+<style>
+    .markdown-body .anchor{
+        float: left;
+        margin-top: -8px;
+        margin-left: -20px;
+        padding-right: 4px;
+        line-height: 1;
+        opacity: 0;
+    }
+    
+    .markdown-body .anchor .anchor-icon{
+        font-size: 15px
+    }
+</style>
+<script>
+    $(document).ready(function() {
+        let nodes = document.querySelector(".markdown-body").querySelectorAll("h1,h2,h3")
+        for(let node of nodes) {
+            var anchor = document.createElement("a")
+            var anchorIcon = document.createElement("i")
+            anchorIcon.setAttribute("class", "fa fa-anchor fa-lg anchor-icon")
+            anchorIcon.setAttribute("aria-hidden", true)
+            anchor.setAttribute("class", "anchor")
+            anchor.setAttribute("href", "#" + node.getAttribute("id"))
+            
+            anchor.onmouseover = function() {
+                this.style.opacity = "0.4"
+            }
+            
+            anchor.onmouseout = function() {
+                this.style.opacity = "0"
+            }
+            
+            anchor.appendChild(anchorIcon)
+            node.appendChild(anchor)
+        }
+    })
+</script>
+</head>
+
+
+<body>
+  <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+  <input id="nm-switch" type="hidden" value="false"> <header class="g-header">
+    <div class="g-logo">
+      <a href="/"></a>
+    </div>
+    <!-- <i id="menu-toggle" class="iconfont icon-menu"></i> -->
+    <svg id="menu-toggle" class="icon-menu" aria-hidden="true">
+        <use xlink:href="#icon-menu"></use>
+    </svg>
+    <nav class="g-nav">
+        <ul>
+            
+            <li><a href="/">home</a></li>
+            
+            <li><a href="/blog/">blog</a></li>
+            
+            <li><a href="/tags/">tags</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+
+  <header
+    class="g-banner post-header post-pattern-circuitBoard bgcolor-default post-no-cover"
+    data-theme="default"
+  >
+    <div class="post-wrapper">
+      <div class="post-tags">
+        
+          
+            <a href="/pages/default/tags.html#Linux%20ubuntu" class="post-tag">Linux ubuntu</a>
+          
+        
+      </div>
+      <h1>Hello Linux</h1>
+      <div class="post-meta">
+        <span class="post-meta-item"><i class="iconfont icon-author"></i>J.K</span>
+        <time class="post-meta-item" datetime="23-09-11"><i class="iconfont icon-date"></i>11 Sep 2023</time>
+      </div>
+    </div>
+    
+  </header>
+
+  <div class="post-content visible">
+    
+
+    <article class="markdown-body">
+      <h2 id="修改了点啥">修改了点啥</h2>
+
+<h3 id="输入法">输入法</h3>
+<p>Linux22.04自带的中文输入法太难用了，打字的时候还会有点卡卡的，这是我受不了的，查了一下网上，好像搜狗的输入法挺好用，所以就弄了。确实好用。下面是这次修改的方法和踩坑的地方。</p>
+<ul>
+  <li>其实跟着<a href="https://shurufa.sogou.com/linux/guide">教程</a>来弄，基本没什么问题。有一个注意的地方就是一定要把原来自带的ibus清干净不然会导致黑屏.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get remove ibus<span class="ge">* //这里的*</span>会保证彻底卸载
+sudo apt-get purge ibus<span class="err">*</span>
+sudo apt-get autoremove
+reboot
+</code></pre></div>    </div>
+    <h4 id="很不幸黑屏怎么办呢">很不幸黑屏怎么办呢~</h4>
+    <p>CTRL+ALT+&lt;F1~F6&gt;进入终端 然后再用上面代码来清干净就好了</p>
+  </li>
+</ul>
+
+<h2 id="加入了jekyll来运营个人博客">加入了jekyll来运营个人博客</h2>
+
+
+    </article>
+
+    
+  </div>
+
+  <section class="author-detail">
+    <section class="post-footer-item author-card">
+      <div class="avatar">
+        <img src="/assets/img/icon.jpeg" alt="">
+      </div>
+      <div class="author-name" rel="author">Jarry Kuang</div>
+      <div class="bio">
+        <p>ROBOTICS MECHATRONIC HARWARD FRONTEND</p>
+      </div>
+      
+    </section>
+    <section class="post-footer-item read-next">
+      
+      <div class="read-next-item">
+        <a href="/hello-jekyll.html" class="read-next-link"></a>
+          <section>
+            <span> Read Previous</span>
+            <h1 style="color: rgb(170, 106, 230);">Hello Jekyll</h1>
+            <p>H20-AC (1.0.2)</p>
+          </section>
+          
+          <div class="filter"></div>
+          <img src="/blog/post_cover/2023-09-11-hello-jekyll.JPG" alt="">
+          
+      </div>
+      
+
+      
+    </section>
+    
+  </section>
+
+  <footer class="g-footer">
+  <section>J.K ©
+  
+  
+    2022
+    -
+  
+  2023
+  </section>
+  <section>Powered by <a href="//jekyllrb.com">Jekyll</a> | <a href="/404.html">Gogogo</a></section>
+</footer>
+
+
+  <script src="/assets/js/social-share.min.js"></script>
+  <script>
+    socialShare('.social-share', {
+      sites: [
+        
+          'wechat'
+          ,
+          
+        
+          'weibo'
+          ,
+          
+        
+          'douban'
+          ,
+          
+        
+          'twitter'
+          
+        
+      ],
+      wechatQrcodeTitle: "分享到微信朋友圈",
+      wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+    });
+  </script>
+
+  
+
+  <script src="/assets/js/prism.js"></script>
+  <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
